@@ -170,7 +170,7 @@ async def notifon(non_event):
     )
 
 
-@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:setuju|ok)\s?(.)?"))
+@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:a|ok)\s?(.)?"))
 async def approvepm(apprvpm):
     """For .ok command, give someone the permissions to PM you."""
     try:
@@ -231,7 +231,7 @@ async def approvepm(apprvpm):
     )
 
 
-@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:tolak|nopm)\s?(.)?"))
+@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:t|da)\s?(.)?"))
 async def disapprovepm(disapprvpm):
     try:
         from AyiinXd.modules.sql_helper.pm_permit_sql import dissprove
