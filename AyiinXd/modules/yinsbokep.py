@@ -1,6 +1,4 @@
-# 🍀 © @tofik_dn
-# ⚠️ Do not remove credits
-# Recode by : @AyiinXd
+
 
 
 # ========================×========================
@@ -17,7 +15,7 @@ from AyiinXd.ayiin import ayiin_cmd, eod, eor
 from Stringyins import get_string
 
 
-@ayiin_cmd(pattern="bokp$")
+@ayiin_cmd(pattern="bokep$")
 async def _(ayiin):
     if ayiin.chat_id in BLACKLIST_CHAT:
         return await eod(ayiin, get_string("ayiin_1"), time=45)
