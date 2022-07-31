@@ -50,7 +50,7 @@ KANGING_STR = [
 ]
 
 
-@ayiin_cmd(pattern="(?:tikel|kang)\\s?(.)?")
+@ayiin_cmd(pattern="(?:kang)\\s?(.)?")
 async def kang(args):
     user = await args.client.get_me()
     if not user.username:
