@@ -468,7 +468,7 @@ async def font_yins(ayiin):
         return await edit_delete(ayiin, "`Ngetik Yang Bener Bego...`")
 
     await ayiin.edit(f"{kontol}")
-    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧")
+    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 ✧")
 
 
 # ========================×========================
@@ -572,7 +572,7 @@ async def _(ayiin):
     elif font == "bolditalic":
         yins = gen_font(text, _bolditalic)
     await edit_or_reply(ayiin, yins)
-    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧")
+    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 ✧")
     if not yins:
         await ayiin.reply("Ketik Yang Bener Bego!!!")
 
@@ -582,29 +582,12 @@ async def _(ayiin):
 # ========================×========================
 
 
-@ayiin_cmd(pattern="lf(.*)(|$)")
-async def fonts(yins):
-    ayiin = await edit_or_reply(yins,
-                                "**»» ᴅᴀғᴛᴀʀ ғᴏɴᴛs ««**\n"
-                                "**         ☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎**\n\n\n"
-                                "**• smallcap » ᴀʏɪɪɴ**\n"
-                                "**• monospace » 𝙰𝚈𝙸𝙸𝙽**\n"
-                                "**• outline » 𝔸𝕐𝕀𝕀ℕ**\n"
-                                "**• script » 𝒜𝒴ℐℐ𝒩**\n"
-                                "**• blackbubbles » 🅐︎🅨︎🅘︎🅘︎🅝︎**\n"
-                                "**• bubbles » Ⓐ︎Ⓨ︎Ⓘ︎Ⓘ︎Ⓝ︎**\n"
-                                "**• bold » 𝗔𝗬𝗜𝗜𝗡**\n"
-                                "**• bolditalic » 𝘼𝙔𝙄𝙄𝙉**\n\n"
-                                "**   ✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**")
-
 
 CMD_HELP.update(
     {
-        "yinsfont": f"**Plugin : **`yinsfont`\
+        "text magic": f"**Plugin : **`text magic`\
         \n\n  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\
-        \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.\
-        \n\n  »  **Perintah :** `{cmd}lf`\
-        \n  »  **Kegunaan : **Untuk Melihat Daftar Font.\
+        \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.
     "
     }
 )
