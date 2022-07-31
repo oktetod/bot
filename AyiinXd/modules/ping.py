@@ -56,7 +56,7 @@ async def _(ping):
     await Ayiin.edit("**🅼🆈-🆄🆂**")
     await Ayiin.edit("**🅼🆈-🆄🆂🅴**")
     await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁**")
-    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱**"
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱**")
     await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱🅾**")
     await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱🅾🆃**")
     end = datetime.now()
