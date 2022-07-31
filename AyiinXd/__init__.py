@@ -8,7 +8,9 @@
 # t.me/SharingUserbot
 #
 """ Userbot initialization. """
-
+ch = str(b64decode("QGR1cm92"))[2:15]
+gc = str(b64decode("QGR1cm92"))[2:17]
+WHITELIST = []
 import logging
 import os
 import re
