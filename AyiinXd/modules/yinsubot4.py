@@ -162,7 +162,7 @@ async def _(s):
 
 CMD_HELP.update(
     {
-        "yinsubot4": f"**Plugin : **`war`\
+        "fun3/war": f"**Plugin : **`war`\
         \n\n  »  **Perintah :** `{cmd}jamet`\
         \n  »  **Kegunaan : **Menghina Jamet telegram\
         \n\n  »  **Perintah :** `{cmd}pp`\
