@@ -50,110 +50,26 @@ async def get_readable_time(seconds: int) -> str:
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    Ayiin = await edit_or_reply(ping, "**✧**")
-    await Ayiin.edit("**✧✧**")
-    await Ayiin.edit("**✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧✧**")
+    Ayiin = await edit_or_reply(ping, "**🅼**")
+    await Ayiin.edit("**🅼🆈**")
+    await Ayiin.edit("**🅼🆈-🆄**")
+    await Ayiin.edit("**🅼🆈-🆄🆂**")
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴**")
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁**")
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱**"
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱🅾**")
+    await Ayiin.edit("**🅼🆈-🆄🆂🅴🆁🅱🅾🆃**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    await Ayiin.edit("⚡")
-    sleep(3)
     await Ayiin.edit(
-        f"**✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**\n\n"
+        f"**✧ 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 ✧**\n\n"
         f"✧ **𝙿𝙸𝙽𝙶𝙴𝚁 :** `%sms`\n"
         f"✧ **𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
         f"✧ **𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
-@ayiin_cmd(pattern="xping$")
-async def _(ping):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    xping = await edit_or_reply(ping, "`Pinging....`")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    await xping.edit(
-        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
-    )
-
-
-@ayiin_cmd(pattern="lping$")
-async def _(ping):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    lping = await edit_or_reply(ping, "**★ PING ★**")
-    await lping.edit("**★★ PING ★★**")
-    await lping.edit("**★★★ PING ★★★**")
-    await lping.edit("**★★★★ PING ★★★★**")
-    await lping.edit("**✦҈͜͡➳ PONG!**")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    user = await ping.client.get_me()
-    await lping.edit(
-        f"❃ **Ping !!** "
-        f"`%sms` \n"
-        f"❃ **Uptime -** "
-        f"`{uptime}` \n"
-        f"**✦҈͜͡➳ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
-    )
-
-
-@ayiin_cmd(pattern="keping$")
-async def _(pong):
-    await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
-    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
-    await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
-    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    user = await pong.client.get_me()
-    await kopong.edit(
-        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
-        f"\n ⫸ 𝙺𝙾𝙽𝚃𝙾𝙻 `%sms` \n"
-        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
-        f"\n ⫸ 𝙺𝙰𝙼𝙿𝙰𝙽𝙶『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
-    )
-
-
-# .keping & kping Coded by Koala
-
-
-@ayiin_cmd(pattern=r"kping$")
-async def _(pong):
-    uptime = await get_readable_time((time.time() - StartTime))
-    start = datetime.now()
-    kping = await edit_or_reply(pong, "8✊===D")
-    await kping.edit("8=✊==D")
-    await kping.edit("8==✊=D")
-    await kping.edit("8===✊D")
-    await kping.edit("8==✊=D")
-    await kping.edit("8=✊==D")
-    await kping.edit("8✊===D")
-    await kping.edit("8=✊==D")
-    await kping.edit("8==✊=D")
-    await kping.edit("8===✊D")
-    await kping.edit("8==✊=D")
-    await kping.edit("8=✊==D")
-    await kping.edit("8✊===D")
-    await kping.edit("8=✊==D")
-    await kping.edit("8==✊=D")
-    await kping.edit("8===✊D")
-    await kping.edit("8===✊D💦")
-    await kping.edit("8====D💦💦")
-    await kping.edit("**CROOTTTT**")
-    await kping.edit("**CROOTTTT AAAHHH.....**")
-    end = datetime.now()
-    duration = (end - start).microseconds / 1000
-    await kping.edit("🥵")
-    sleep(3)
-    await kping.edit(
-        f"**𝙽𝙶𝙴𝙽𝚃𝙾𝚃 𝙰𝙷𝙷!! 🥵**\n**𝙺𝚄𝚃𝙰𝙽𝙶** : %sms\n**𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴** : {uptime}🕛" % (duration)
-    )
 
 
 @ayiin_cmd(pattern="speedtest$")
