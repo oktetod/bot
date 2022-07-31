@@ -102,7 +102,7 @@ async def _(d):
 
 CMD_HELP.update(
     {
-        "yinsubot2": f"**Plugin : **`yinsubot2`\
+        "fun5": f"**Plugin : **`fun5`\
         \n\n  »  **Perintah :** `{cmd}lipkol`\
         \n  »  **Kegunaan : **Ngajakin ayang slipkol\
         \n\n  »  **Perintah :** `{cmd}nakal`\
