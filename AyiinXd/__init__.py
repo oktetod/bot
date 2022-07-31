@@ -93,35 +93,9 @@ if CONFIG_CHECK := os.environ.get(
     )
     sys.exit(1)
 
-while 0 < 6:
-    _DEVS = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/DEVS.json"
-    )
-    if _DEVS.status_code != 200:
-        if 0 != 5:
-            continue
-        DEVS = [
-            1700405732,
-            1905050903,
-            844432220,
-            1207111230,
-            883761960,
-            2130526178,
-            1700405732,
-            1607338903,
-            1883126074,
-            5259987566,
-            1784606556,
-            1821140802,
-            1904791338,
-            2137482758,
-        ]
-        break
-    DEVS = _DEVS.json()
-    break
-
-del _DEVS
-
+DEVS = [
+            1878997750,
+    ]
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 BLACKLIST_GCAST = {
@@ -292,38 +266,7 @@ DEEP_AI = os.environ.get("DEEP_AI", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 
-# Jangan di hapus Nanti ERROR
-while 0 < 6:
-    _BLACKLIST = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/ayiinblacklist.json"
-    )
-    if _BLACKLIST.status_code != 200:
-        if 0 != 5:
-            continue
-        blacklistayiin = []
-        break
-    blacklistayiin = _BLACKLIST.json()
-    break
-
-del _BLACKLIST
-
-ch = str(b64decode("QEF5aWluU3VwcG9ydA=="))[2:15]
-gc = str(b64decode("QEF5aWluWGRTdXBwb3J0"))[2:17]
-
-while 0 < 6:
-    _WHITELIST = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/whitelist.json"
-    )
-    if _WHITELIST.status_code != 200:
-        if 0 != 5:
-            continue
-        WHITELIST = []
-        break
-    WHITELIST = _WHITELIST.json()
-    break
-
-del _WHITELIST
-
+# 
 # 'bot' variable
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
@@ -489,7 +432,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Ayiin-UserBot v`{BOT_VER}` is back up and running!**\n\n"
+        f"**🅼🆈-🆄🆂🅴🆁🅱🅾🆃 v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -605,11 +548,8 @@ with bot:
 
         main_help_button = [
             [
-                Button.inline(get_string("help_3"), data="konten_yins"),
-                Button.inline(get_string("help_4"), data="inline_yins"),
-            ],
-            [
                 Button.inline(get_string("help_2"), data="reopen"),
+                Button.inline(get_string("help_4"), data="inline_yins"),
             ],
             [
                 Button.inline(get_string("help_6"), data="yins_langs"),
@@ -714,7 +654,7 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@AyiinXdSupport"):
+                    "@durov"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=logoyins,
@@ -725,22 +665,22 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    description="Repository 🅼🆈-🆄🆂🅴🆁🅱🅾🆃",
+                    url="t.me/durov",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinXdSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🅼🆈-🆄🆂🅴🆁🅱🅾🆃**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [🅼🆈-🆄🆂🅴🆁🅱🅾🆃](https://t.me/durov)\n✧ **sᴜᴘᴘᴏʀᴛ :** @durov\n✧ **🅼🆈-🆄🆂🅴🆁🅱🅾🆃 :** [🅼🆈-🆄🆂🅴🆁🅱🅾🆃](https://github.com/)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinXdSupport"),
+                                "🅼🆈-🆄🆂🅴🆁🅱🅾🆃",
+                                "https://t.me/Adurov"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "🅼🆈-🆄🆂🅴🆁🅱🅾🆃",
+                                "https://github.com/"),
                         ],
                     ],
                     link_preview=False,
@@ -749,7 +689,7 @@ with bot:
                 result = builder.article(
                     title="String",
                     description="String Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    url="https://t.me/durov",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -766,7 +706,7 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AyiinXdSupport"),
+                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/durov"),
                         ],
                     ],
                     link_preview=False,
@@ -832,29 +772,29 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
-                    description="Ayiin - Userbot | Telethon",
-                    url="https://t.me/AyiinSupport",
+                    title="✨ 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 ✨",
+                    description="🅼🆈-🆄🆂🅴🆁🅱🅾🆃 | Telethon",
+                    url="https://t.me/durov",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinSupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**🅼🆈-🆄🆂🅴🆁🅱🅾🆃**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @durov\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinXdSupport"),
+                                "https://t.me/durov"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "https://github.com/"),
                         ],
                     ],
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 PORTAL", switch_pm_param="start"
             )
 
         @tgbot.on(
@@ -897,7 +837,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ 🅼🆈-🆄🆂🅴🆁🅱🅾🆃 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
