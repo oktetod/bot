@@ -587,7 +587,7 @@ CMD_HELP.update(
     {
         "text magic": f"**Plugin : **`text magic`\
         \n\n  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\
-        \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.
+        \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.\
     "
     }
 )
