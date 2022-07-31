@@ -22,7 +22,7 @@ from Stringyins import get_string
 # ========================×========================
 
 
-@ayiin_cmd(pattern="couple(?: |$)(.*)")
+@ayiin_cmd(pattern="cp(?: |$)(.*)")
 async def couple(bucin):
     copl = await bucin.eor(get_string("com_1"))
     try:
@@ -45,8 +45,8 @@ async def couple(bucin):
 
 CMD_HELP.update(
     {
-        "yinscouple": f"**Plugin :** `yinscouple`\
-        \n\n  »  **Perintah :** `{cmd}couple`\
+        "ppcp": f"**Plugin :** `ppcp`\
+        \n\n  »  **Perintah :** `{cmd}cp`\
         \n  »  **Kegunaan :** __Untuk Mendapatkan Foto Couple Secara Random.__\
     "
     }
