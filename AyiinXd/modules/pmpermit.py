@@ -170,7 +170,7 @@ async def notifon(non_event):
     )
 
 
-@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:a|ok)\s?(.)?"))
+@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:ya|ok)\s?(.)?"))
 async def approvepm(apprvpm):
     """For .ok command, give someone the permissions to PM you."""
     try:
@@ -411,7 +411,7 @@ async def pmdevs(event):
 CMD_HELP.update(
     {
         "pmpermit": f"**Plugin : **`pmpermit`\
-        \n\n  »  **Perintah :** `{cmd}a` atau `{cmd}ok`\
+        \n\n  »  **Perintah :** `{cmd}ya` atau `{cmd}ok`\
         \n  »  **Kegunaan : **Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm.\
         \n\n  »  **Perintah :** `{cmd}t` atau `{cmd}da`\
         \n  »  **Kegunaan : **Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm.\
