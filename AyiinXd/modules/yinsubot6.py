@@ -58,10 +58,10 @@ async def _(d):
 
 CMD_HELP.update(
     {
-        "yinsubot6": f"**Plugin : **`yinsubot6`\
+        "fun1": f"**Plugin : **`fun1`\
         \n\n  »  **Perintah :** `{cmd}cacad`\
         \n  »  **Kegunaan :** Coba Sendiri Tod.\
-        \n\n  »  **Perintah :** `{cmd}hayolo`\
+        \n\n  »  **Perintah :** `{cmd}cacad & hayo`\
         \n  »  **Kegunaan :** Coba Senditi Tod.\
         \n\n**Klo mau Req, kosa kata dari lu Bisa pake Module costum. Ketik** `{cmd}help costum`\
     "
