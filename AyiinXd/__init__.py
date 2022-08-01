@@ -554,6 +554,9 @@ with bot:
                 Button.inline(get_string("help_4"), data="inline_yins"),
             ],
             [
+                Button.inline("Donasi", url=f"https://link.dana.id/qr/hmg9z2c"),
+            ],
+            [
                 Button.inline(get_string("help_6"), data="yins_langs"),
                 Button.url(get_string("help_7"), url=f"t.me/{botusername}?start="),
             ],
