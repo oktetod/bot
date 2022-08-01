@@ -231,7 +231,7 @@ async def approvepm(apprvpm):
     )
 
 
-@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:t|da)\s?(.)?"))
+@bot.on(ayiin_cmd(outgoing=True, pattern=r"(?:tolak|da)\s?(.)?"))
 async def disapprovepm(disapprvpm):
     try:
         from AyiinXd.modules.sql_helper.pm_permit_sql import dissprove
@@ -413,7 +413,7 @@ CMD_HELP.update(
         "pmpermit": f"**Plugin : **`pmpermit`\
         \n\n  »  **Perintah :** `{cmd}ya` atau `{cmd}ok`\
         \n  »  **Kegunaan : **Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm.\
-        \n\n  »  **Perintah :** `{cmd}t` atau `{cmd}da`\
+        \n\n  »  **Perintah :** `{cmd}tolak` atau `{cmd}da`\
         \n  »  **Kegunaan : **Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm.\
         \n\n  »  **Perintah :** `{cmd}block`\
         \n  »  **Kegunaan : **Memblokir Orang Di PM.\
